@@ -97,11 +97,7 @@ export const PricingCards: React.FC = () => {
             style={{ animationDelay: `${index * 1}s`, animationFillMode: 'both' }}
           >
             <div
-              className={`flex flex-col items-center text-[rgba(68,68,68,1)] font-semibold uppercase w-full pt-10 px-[18px] rounded-[45px] border-[rgba(245,184,85,1)] border-solid border-2 max-md:mt-[31px] max-md:pr-5 transition-colors duration-300 hover:bg-[rgba(245,184,85,1)] ${
-                card.highlighted
-                  ? 'bg-[rgba(245,184,85,1)]'
-                  : 'bg-white'
-              }`}
+              className="flex flex-col items-center text-[rgba(68,68,68,1)] font-semibold uppercase w-full pt-10 px-[18px] rounded-[45px] border-[rgba(245,184,85,1)] border-solid border-2 max-md:mt-[31px] max-md:pr-5 transition-colors duration-300 hover:bg-[rgba(245,184,85,1)] bg-white"
             >
               <div className="text-[25px] text-center">
                 <span className="text-[32px] text-[rgba(68,68,68,1)]">

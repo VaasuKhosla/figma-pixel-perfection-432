@@ -155,8 +155,8 @@ export const Footer: React.FC = () => {
               </div>
             </div>
             
-            <form onSubmit={handleSubmit} className="flex w-[803px] max-w-full gap-5 text-sm font-normal justify-between mt-[60px] max-md:mt-10">
-              <div className="bg-[rgba(217,217,217,0)] flex flex-col text-[#444444] pt-3 pb-[19px] px-[23px] rounded-[100px] border-[rgba(11,81,60,1)] border-solid border-2 max-md:px-5">
+            <form onSubmit={handleSubmit} className="flex w-[803px] max-w-full gap-4 text-sm font-normal items-start mt-[60px] max-md:mt-10 max-md:flex-col">
+              <div className="flex-1 bg-[rgba(217,217,217,0)] flex flex-col text-[#444444] pt-3 pb-[19px] px-[23px] rounded-[100px] border-[rgba(11,81,60,1)] border-solid border-2 max-md:px-5 min-w-0">
                 <label htmlFor="email" className="sr-only">Email Address</label>
                 <input
                   type="email"
@@ -165,13 +165,13 @@ export const Footer: React.FC = () => {
                   value={loginForm.email}
                   onChange={handleInputChange}
                   placeholder="EMAIL ADDRESS"
-                  className="border-0 bg-transparent outline-none placeholder-[#444444] text-[#444444]"
+                  className="border-0 bg-transparent outline-none placeholder-[#444444] text-[#444444] w-full"
                   required
                 />
               </div>
               
-              <div className="self-stretch flex flex-col items-stretch">
-                <div className="bg-[rgba(217,217,217,0)] flex flex-col text-[#444444] whitespace-nowrap pt-3 pb-[19px] px-[23px] rounded-[100px] border-[rgba(11,81,60,1)] border-solid border-2 max-md:px-5 relative">
+              <div className="flex-1 flex flex-col min-w-0">
+                <div className="bg-[rgba(217,217,217,0)] flex flex-col text-[#444444] pt-3 pb-[19px] px-[23px] rounded-[100px] border-[rgba(11,81,60,1)] border-solid border-2 max-md:px-5 relative">
                   <label htmlFor="password" className="sr-only">Password</label>
                   <input
                     type={showPassword ? 'text' : 'password'}
@@ -180,7 +180,7 @@ export const Footer: React.FC = () => {
                     value={loginForm.password}
                     onChange={handleInputChange}
                     placeholder="PASSWORD"
-                    className="border-0 bg-transparent outline-none placeholder-[#444444] text-[#444444]"
+                    className="border-0 bg-transparent outline-none placeholder-[#444444] text-[#444444] w-full pr-12"
                     required
                   />
                   <button
@@ -193,11 +193,11 @@ export const Footer: React.FC = () => {
                   </button>
                 </div>
                 
-                <div className="text-[rgba(68,68,68,1)] tracking-[-0.28px] ml-[23px] mt-[13px] max-md:ml-2.5">
+                <div className="text-[rgba(68,68,68,1)] tracking-[-0.28px] ml-[23px] mt-[13px] max-md:ml-2.5 text-xs">
                   <button
                     type="button"
                     onClick={handleForgotPassword}
-                    className="hover:text-[rgba(208,90,105,1)] transition-colors mr-2"
+                    className="hover:text-[rgba(208,90,105,1)] transition-colors mr-3"
                   >
                     Forgot password?
                   </button>
@@ -213,7 +213,7 @@ export const Footer: React.FC = () => {
               
               <button
                 type="submit"
-                className="text-[rgba(11,81,60,1)] text-xl font-bold hover:text-[rgba(208,90,105,1)] transition-colors focus:outline-none focus:ring-2 focus:ring-[rgba(11,81,60,1)] rounded"
+                className="text-[rgba(11,81,60,1)] text-lg font-bold hover:text-[rgba(208,90,105,1)] transition-colors focus:outline-none focus:ring-2 focus:ring-[rgba(11,81,60,1)] rounded px-4 py-2 whitespace-nowrap max-md:w-full max-md:mt-4"
               >
                 SIGN IN
               </button>

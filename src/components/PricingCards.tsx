@@ -94,7 +94,7 @@ export const PricingCards: React.FC = () => {
           <article
             key={index}
             className={`w-3/12 max-md:w-full max-md:ml-0 animate-fade-in`}
-            style={{ animationDelay: `${index * 0.2}s`, animationFillMode: 'both' }}
+            style={{ animationDelay: `${index * 1}s`, animationFillMode: 'both' }}
           >
             <div
               className={`flex flex-col items-center text-[rgba(68,68,68,1)] font-semibold uppercase w-full pt-10 px-[18px] rounded-[45px] border-[rgba(245,184,85,1)] border-solid border-2 max-md:mt-[31px] max-md:pr-5 transition-colors duration-300 hover:bg-[rgba(245,184,85,1)] ${

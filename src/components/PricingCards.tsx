@@ -118,11 +118,7 @@ export const PricingCards: React.FC = () => {
               
               <button
                 onClick={() => handleGetStarted(card.price)}
-                className={`z-10 flex w-[170px] max-w-full flex-col text-xs justify-center mt-[19px] px-[18px] py-3.5 rounded-[100px] border-solid border-2 transition-all duration-200 hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
-                  card.highlighted
-                    ? 'bg-[rgba(208,90,105,1)] text-white font-bold border-[rgba(208,90,105,1)] focus:ring-[rgba(208,90,105,1)]'
-                    : 'bg-white text-[rgba(68,68,68,1)] font-normal border-[rgba(208,90,105,1)] focus:ring-[rgba(208,90,105,1)]'
-                }`}
+                className="z-10 flex w-[170px] max-w-full flex-col text-xs justify-center mt-[19px] px-[18px] py-3.5 rounded-[100px] border-solid border-2 bg-white text-[rgba(68,68,68,1)] font-normal border-[rgba(208,90,105,1)] transition-all duration-200 hover:bg-[rgba(208,90,105,1)] hover:text-white hover:font-bold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[rgba(208,90,105,1)]"
               >
                 Get started now
               </button>

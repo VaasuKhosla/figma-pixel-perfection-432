@@ -20,9 +20,7 @@ export const PricingTabs: React.FC<PricingTabsProps> = ({ onTabChange }) => {
         <button
           key={tab}
           onClick={() => handleTabClick(tab)}
-          className={`bg-white pt-[17px] pb-7 px-[45px] rounded-[100px] border-[rgba(245,184,85,1)] border-solid border-2 max-md:px-5 transition-all duration-200 hover:bg-[rgba(245,184,85,0.1)] focus:outline-none focus:ring-2 focus:ring-[rgba(245,184,85,1)] ${
-            activeTab === tab ? 'bg-[rgba(245,184,85,0.2)]' : ''
-          }`}
+          className="bg-white pt-[17px] pb-7 px-[45px] rounded-[100px] border-[rgba(245,184,85,1)] border-solid border-2 max-md:px-5 transition-all duration-200 hover:bg-[rgba(245,184,85,1)] hover:text-white focus:outline-none focus:ring-2 focus:ring-[rgba(245,184,85,1)]"
           aria-pressed={activeTab === tab}
         >
           {tab}

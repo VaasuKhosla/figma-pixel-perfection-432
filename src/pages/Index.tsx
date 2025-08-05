@@ -1,12 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import { HeroSection } from '@/components/HeroSection';
+import { PricingTabs } from '@/components/PricingTabs';
+import { PricingCards } from '@/components/PricingCards';
+import { Footer } from '@/components/Footer';
 
 const Index = () => {
+  const handleTabChange = (tab: string) => {
+    console.log('Selected pricing tab:', tab);
+    // Implement tab change logic here if needed
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="bg-white flex flex-col overflow-hidden items-center min-h-screen">
+      <HeroSection />
+      
+      <main className="w-full flex flex-col items-center">
+        <PricingTabs onTabChange={handleTabChange} />
+        <PricingCards />
+      </main>
+      
+      <Footer />
     </div>
   );
 };

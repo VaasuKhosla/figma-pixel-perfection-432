@@ -96,7 +96,7 @@ export const PricingCards: React.FC = () => {
             className="w-3/12 max-md:w-full max-md:ml-0"
           >
             <div
-              className={`flex flex-col items-center text-[rgba(68,68,68,1)] font-semibold uppercase w-full pt-10 px-[18px] rounded-[45px] border-[rgba(245,184,85,1)] border-solid border-2 max-md:mt-[31px] max-md:pr-5 ${
+              className={`flex flex-col items-center text-[rgba(68,68,68,1)] font-semibold uppercase w-full pt-10 px-[18px] rounded-[45px] border-[rgba(245,184,85,1)] border-solid border-2 max-md:mt-[31px] max-md:pr-5 transition-colors duration-300 hover:bg-[rgba(245,184,85,1)] ${
                 card.highlighted
                   ? 'bg-[rgba(245,184,85,1)]'
                   : 'bg-white'
